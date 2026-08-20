@@ -6,8 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+    <div style="border: 2px solid red;,width:300px;,height:300px;">
+        <center><h1>online shop</h1></center>
+        <h3>tea:120</h3>
+        <h3>coffee:500</h3>
+        <h3>rice:600</h3>
+        <br>
+        <br>
+        <button onclick="buy()">click for buy</button>
+
+    </div>
+    
+
     <script>
-    var z=prompt("Enter your number");
+        let shop = {
+            Tea: 120,
+            Coffee: 500,
+            Rice: 600,
+            Sugar: 700
+        };
+
+    
+
+        for (let item in shop) {
+            document.write(item + " : ₹" + shop[item] + "<br>");
+        }
+        document.write("Enter your product")
+        if(shop[product]!==undefined)
     </script>
+
+   
 </body>
 </html>
