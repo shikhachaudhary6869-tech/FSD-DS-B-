@@ -8,7 +8,8 @@ function myfunction(){
   };
   return (
     <div>
-      <button onClick={update}></button>
+      <button onClick={update}>Update!</button>
     </div>
   )
 }
+export default myfunction
